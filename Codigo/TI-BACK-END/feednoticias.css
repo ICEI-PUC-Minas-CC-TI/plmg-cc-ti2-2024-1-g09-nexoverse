@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+header {
+    background-color: #bf1cb9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+}
+
+img.eu2 {
+    max-width: 100%;
+    height: auto;
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+}
+
+img.eu {
+    max-width: 50%;
+    height: auto;
+    display: block; /* Remove espaços extras ao redor da imagem */
+    margin-bottom: 20px; /* Adiciona espaço abaixo da imagem */
+    border-radius: 50%; /* Define a borda arredondada */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px; /* Adiciona espaçamento menor no cabeçalho */
+    }
+
+    .header-button {
+        margin-top: 10px;
+        margin-left: 0;
+        padding: 8px 16px; /* Reduz o padding nos botões para telas menores */
+        font-size: 14px; /* Reduz o tamanho da fonte nos botões */
+    }
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 0 20px;
+    
+}
+
+h1 {
+    text-align: center;
+    color:#bf1cb9;
+}
+
+.news-feed {
+    margin-top: 20px;
+    background-color: #141414; /* Adicionando a cor de fundo */
+}
+
+.news-item {
+    border-bottom: 1px solid #bf1cb9;
+    padding: 10px 0;
+}
+
+.news-item:last-child {
+    border: none;
+}
+
+.news-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #bf1cb9;
+}
+
+.news-description {
+    margin-top: 5px;
+    color: #ffffff;
+}
+.news-date {
+    color: #bf1cb9; 
+}
+
