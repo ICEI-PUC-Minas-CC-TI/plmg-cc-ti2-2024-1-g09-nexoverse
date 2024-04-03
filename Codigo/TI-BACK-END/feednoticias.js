@@ -22,23 +22,23 @@ document.addEventListener("DOMContentLoaded", function() {
           timestamp: "2024-03-30T15:45:00Z"
         },
         {
-            title: "Novo lançamento: Jogo AAA agora disponível para pré-venda!",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            timestamp: "Publicado em: 2 de abril de 2024"
-          },
-          {
             title: "Entrevista exclusiva com o criador do jogo mais esperado do ano!",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            timestamp: "Publicado em: 1 de abril de 2024"
-          },
-          {
+            summary: "Descubra os bastidores da criação do jogo mais aguardado do ano em uma entrevista exclusiva com o criador.",
+            content: "Em uma entrevista exclusiva, o criador do aguardado jogo 'The Last of Us III' revelou detalhes emocionantes sobre o desenvolvimento do próximo capítulo da aclamada franquia. Segundo o criador, 'The Last of Us III' será uma experiência emocionalmente intensa, explorando temas como amor, perda e redenção em um mundo pós-apocalíptico brutal. Os fãs estão ansiosos para mergulhar nesta jornada emocionante quando o jogo for lançado no final deste ano.",
+            timestamp: "2024-01-08T12:45:00Z"
+        },
+        {
             title: "Anunciada expansão massiva para o jogo mais popular do momento!",
-            summary: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis. Sed suscipit dolor sed magna rhoncus, at vestibulum purus facilisis.",
-            timestamp: "Publicado em: 31 de março de 2024"
-          }
+            summary: "Prepare-se para uma nova aventura com a expansão massiva do jogo mais popular do momento. Novos mundos, desafios e muito mais!",
+            content: "A aguardada expansão para 'World of Warcraft: Shadowlands' foi oficialmente anunciada pela Blizzard Entertainment. Intitulada 'Gates of Oblivion', a expansão promete levar os jogadores a terras desconhecidas e perigosas, onde enfrentarão novos inimigos e desafios épicos. Além disso, 'Gates of Oblivion' apresentará uma nova classe jogável, o Necromante, que dominará as artes das trevas para derrotar seus adversários. Os jogadores mal podem esperar para embarcar nesta nova jornada quando a expansão for lançada no final deste ano.",
+            timestamp: "2024-02-10T15:48:00Z"
+        },
+        {
+            title: "Novo conteúdo adicional lançado para o jogo revolucionário 'The Game'!",
+            summary: "A aguardada expansão para 'The Game' finalmente chegou, trazendo novas histórias, personagens e muito mais para os fãs.",
+            content: "A expansão 'Rebirth' para o jogo 'The Game' foi lançada oficialmente hoje, marcando um novo capítulo na história dos jogos eletrônicos. Com uma narrativa envolvente e revolucionária, 'Rebirth' mergulha os jogadores em um mundo completamente novo, repleto de mistérios, desafios e descobertas. Os fãs podem esperar novos personagens cativantes, locais deslumbrantes e uma jogabilidade aprimorada que redefine os padrões da indústria. Além disso, a expansão traz uma série de atualizações de qualidade de vida e melhorias técnicas para garantir uma experiência de jogo ainda mais imersiva. 'Rebirth' está disponível agora para os jogadores de todo o mundo, e promete levar 'The Game' a novos patamares de sucesso.",
+            timestamp: "2024-05-10T13:47:00Z"
+        }
       ];
       
   
