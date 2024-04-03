@@ -16,7 +16,7 @@
   
   /* Estilos Gerais */
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Archivo Black', sans-serif;
     background-color: #141414;
     color: #ffffff;
   }
@@ -115,6 +115,47 @@
     margin-bottom: 30px;
     text-align: justify;
   }
+
+  .equipe{
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .equipe h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#bf1cb9;
+  }
+  .equipe p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .membro {
+    text-align: center;
+    margin: 20px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a foto redonda */
+    object-fit: cover; /* Garante que a foto mantenha sua proporção */
+    border: 3px solid #fff; /* Adiciona uma borda branca à foto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à foto */
+}
+
+.membro h3 {
+    margin-top: 10px;
+}
+
+.membro p {
+    font-size: 14px;
+    color: white;
+}
   
   /* TIRANDO DEFAULT*/
   .button {
