@@ -1,15 +1,15 @@
-# [Nexoverse]
+# Nexoverse
 
-[Seja bem-vindo ao Nexoverse, onde os mundos dos jogos se encontram e as amizades se formam.
-Em um universo onde cada jogador é uma estrela, o Nexoverse é o espaço onde essas estrelas se alinham, permitindo que você encontre amigos e parceiros de jogo que compartilham sua paixão pelo universo dos games.]
+Seja bem-vindo ao Nexoverse, onde os mundos dos jogos se encontram e as amizades se formam.
+Em um universo onde cada jogador é uma estrela, o Nexoverse é o espaço onde essas estrelas se alinham, permitindo que você encontre amigos e parceiros de jogo que compartilham sua paixão pelo universo dos games.
 
 ## Alunos integrantes da equipe
 
-* [Arthur Campos Pereira]
-* [Gabriel Alves Bragança]
-* [Gustavo Lopes de Resende]
-* [Mateus Henrique Duarte Silva]
-* [Pedro Guimarães Alves Freitas]
+* Arthur Campos Pereira
+* Gabriel Alves Bragança
+* Gustavo Lopes de Resende
+* Mateus Henrique Duarte Silva
+* Pedro Guimarães Alves Freitas
 
 ## Professores responsáveis
 
