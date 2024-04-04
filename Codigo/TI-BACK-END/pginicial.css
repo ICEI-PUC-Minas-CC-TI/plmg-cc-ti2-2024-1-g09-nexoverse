@@ -99,6 +99,11 @@
     margin-bottom: 30px;
   }
   
+  .logo {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+}
   .sobreNos{
     text-align: center;
     padding: 100px;
