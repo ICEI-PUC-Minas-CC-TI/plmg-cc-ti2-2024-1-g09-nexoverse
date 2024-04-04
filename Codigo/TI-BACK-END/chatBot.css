@@ -4,6 +4,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed; /* Fixar o cabeçalho no topo */
+    width: 100%; /* Ocupar toda a largura */
+    top: 0; /* Posicionar no topo */
+    left: 0; /* Alinhar à esquerda */
 }
 
 .header-button {
@@ -35,15 +39,22 @@ body, html {
     background-color: #141414;
     height: 100%;
     margin: 0;
+    padding: 0; /* Remover qualquer padding padrão */
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+body {
+    margin-top: 0; /* Remover qualquer margem padrão que alguns navegadores aplicam */
+}
+
 .card {
+    margin-top: 80px; /* Adicionar margem ao conteúdo para evitar que fique atrás do cabeçalho */
     width: 300px;
-    background-color: #141414; /* roxo escuro */
-    color: #fff; /* texto branco */
-    border: 1px solid #4a4a4a;
+    background-color: #1e1d1d;
+    color: #fff;
+    border: 1px solid #bf1cb9;
     border-radius: 5px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
 }
