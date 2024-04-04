@@ -5,10 +5,10 @@ const dislike = document.querySelector('#dislike');
 
 // constants
 const urls = [
-  'img/gustavo.jpg',
-  'img/gabriel.jpg',
-  'img/mateus.jpg',
-  'img/arthur.png',
+  'img/gustavoM.png',
+  'img/gabrielM.png',
+  'img/mateusM.png',
+  'img/arthurM.png',
   'img/pedro.png',
 ];
 
@@ -63,4 +63,3 @@ personIcon.addEventListener("click", function() {
   // Redirecione para perfil.html
   window.location.href = "perfil.html";
 });
-
