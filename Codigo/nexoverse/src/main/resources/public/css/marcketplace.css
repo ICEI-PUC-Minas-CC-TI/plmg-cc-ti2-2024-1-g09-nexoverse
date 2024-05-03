@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:Codigo/nexoverse/src/main/resources/public/css/marcketplace.css
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -157,4 +158,165 @@ footer {
     color: #fff;
     text-align: center;
     padding: 20px;
+========
+body {
+    font-family: 'Archivo Black', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #141414;
+}
+
+body h2{
+    color:#bf1cb9;
+}
+
+header {
+    background-color: #bf1cb9;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+}
+
+.eventos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.evento {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.evento h3 {
+    color: #333;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+
+/*Neo Brutalism pricing card*/
+.card {
+    width: 190px;
+    background: #00ffa0;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    margin-right: 20px; /* Espaço entre os cards */
+    display: inline-block; /* Exibe os cards em linha */
+}
+
+.card2 {
+    width: 190px;
+    background: #bf1cb9;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    margin-right: 20px; /* Espaço entre os cards */
+    display: inline-block; /* Exibe os cards em linha */
+}
+
+.card3 {
+    width: 190px;
+    background: #e8f902;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: 0.5vmin solid #05060f;
+    box-shadow: 0.4rem 0.4rem #05060f;
+    overflow: hidden;
+    color: black;
+    margin-right: 20px; /* Espaço entre os cards */
+    display: inline-block; /* Exibe os cards em linha */
+}
+
+  
+.card:last-child {
+    margin-right: 0; /* Remove a margem do último card */
+}
+
+.packs-container {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center; /* Centraliza os elementos ao longo do eixo principal (horizontalmente) */
+}
+  /*Card content*/
+  .pricing-block-content {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+  
+    .pricing-plan {
+    color: #05060f;
+    font-size: 1.3rem;
+    line-height: 1.25;
+    font-weight: 700;
+}
+  
+  .price-value {
+      display: flex;
+      color: #05060f;
+      font-size: 1.8rem;
+      line-height: 1.25;
+      font-weight: 700;
+    }
+    
+  .pricing-note {
+    opacity: 0.8;
+  }
+  
+  /*Checklist*/
+  .check-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.check-list-item {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+>>>>>>>> aceb79c0fb0f383d1c3b7d938d6a49afed810102:Codigo/TI-BACK-END/CSS/marcketplace.css
 }

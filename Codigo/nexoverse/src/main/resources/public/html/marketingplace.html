@@ -1,3 +1,4 @@
+<<<<<<<< HEAD:Codigo/nexoverse/src/main/resources/public/html/marketingplace.html
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -464,3 +465,478 @@
     </footer>
 </body>
 </html>
+========
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marketplace de Eventos</title>
+    <link rel="stylesheet" href="CSS/marcketplace.css">
+</head>
+<body>
+    <header>
+        <h1>Marketplace de Eventos</h1>
+        <a class="header-button" href="feednoticias.html">Voltar</a>
+    </header>
+    <main>
+        <section class="eventos">
+           
+            <h2>Próximos Eventos:</h2>
+            <div class="evento">
+                <h3>Campeonato FC24</h3>
+                <p>Data: 01/05/2024</p>
+                <p>Local: Playstation (online)</p>
+                <p>Descrição: Campeonato de EAFC24, procure por NexoverseChampionchip na área de torneios do jogo.</p>
+                <button id="participa">Participar</button>
+            </div>
+            <div class="evento">
+                <h3>Campeonato Rainbow Six</h3>
+                <p>Data: 10/05/2024</p>
+                <p>Local: Praça da liberdade, PUC Minas, Prédio 04, Sala 1302</p>
+                <p>Descrição: Torneio de Rainbow Six, equipes de 5 participantes.</p>
+                <button id="participa">Participar</button>
+            </div>
+            <div class="evento">
+                <h3>Corrida F124</h3>
+                <p>Data: 15/05/2024</p>
+                <p>Local: Playstation (online)</p>
+                <p>Descrição: Corrida no F124, no máximo 20 participantes, procure pela sala nexoverse2024 na área de corridas privadas.</p>
+                <button id="participa">Participar</button>
+            </div>
+        
+        </section>
+
+       
+            <div class="packs-container">
+
+            <!--Starter pack-->
+              <div class="card">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">Plano Grátis</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">R$<span class="price-integer">00,00</span></p>
+                    <div id="priceDiscountCent">/mês</div>
+                  </div>
+                  <div class="pricing-note">Gratis para sempre</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso a tela do match
+                    </li>
+                    <!--
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Lorem Ipsum
+                    </li>
+                  -->
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao chat
+                    </li>
+                    <!--
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Lorem Ipsum
+                    </li>
+                    -->
+                  </ul>
+                </div>
+              </div>
+
+            <!--Pack épico-->
+              <div class="card2">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">Plano Épico</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">R$<span class="price-integer">10,00</span></p>
+                    <div id="priceDiscountCent">/mês</div>
+                  </div>
+                  <div class="pricing-note">Plano Mensal</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao Match
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao chat
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao feed de notícias
+                    </li>
+                    <!--
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Lorem Ipsum
+                    </li>
+                    -->
+                  </ul>
+                </div>
+              </div>
+
+            <!--Pack lendário-->
+              <div class="card3">
+                <div class="pricing-block-content">
+                  <p class="pricing-plan">Plano Lendário</p>
+                  <div class="price-value" data-currency="$ USD" data-currency-simple="USD">
+                    <p class="price-number">R$<span class="price-integer">25,00</span></p>
+                    <div id="priceDiscountCent">/mês</div>
+                  </div>
+                  <div class="pricing-note">Plano Mensal/acesso completo</div>
+                  <ul class="check-list" role="list">
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao Match
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao chat 
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso ao feed de notícias
+                    </li>
+                    <li class="check-list-item">
+                      <svg
+                        version="1.0"
+                        preserveAspectRatio="xMidYMid meet"
+                        height="16"
+                        viewBox="0 0 30 30.000001"
+                        zoomAndPan="magnify"
+                        width="16"
+                        xmlns:xlink="http://www.w3.org/1999/xlink"
+                        xmlns="http://www.w3.org/2000/svg"
+                        style="color: rgb(102, 78, 255);"
+                      >
+                        <defs>
+                          <clipPath id="id1">
+                            <path
+                              fill="#664eff"
+                              clip-rule="nonzero"
+                              d="M 2.328125 4.222656 L 27.734375 4.222656 L 27.734375 24.542969 L 2.328125 24.542969 Z M 2.328125 4.222656"
+                            ></path>
+                          </clipPath>
+                        </defs>
+                        <g clip-path="url(#id1)">
+                          <path
+                            fill-rule="nonzero"
+                            fill-opacity="1"
+                            d="M 27.5 7.53125 L 24.464844 4.542969 C 24.15625 4.238281 23.65625 4.238281 23.347656 4.542969 L 11.035156 16.667969 L 6.824219 12.523438 C 6.527344 12.230469 6 12.230469 5.703125 12.523438 L 2.640625 15.539062 C 2.332031 15.84375 2.332031 16.335938 2.640625 16.640625 L 10.445312 24.324219 C 10.59375 24.472656 10.796875 24.554688 11.007812 24.554688 C 11.214844 24.554688 11.417969 24.472656 11.566406 24.324219 L 27.5 8.632812 C 27.648438 8.488281 27.734375 8.289062 27.734375 8.082031 C 27.734375 7.875 27.648438 7.679688 27.5 7.53125 Z M 27.5 7.53125"
+                            fill="#664eff"
+                          ></path>
+                        </g></svg>
+                      >Acesso a torneio e eventos
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+        
+    </main>
+    <footer>
+        <p>© 2024 Marketplace e Eventos. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
+>>>>>>>> aceb79c0fb0f383d1c3b7d938d6a49afed810102:Codigo/TI-BACK-END/HTML/marketingplace.html
