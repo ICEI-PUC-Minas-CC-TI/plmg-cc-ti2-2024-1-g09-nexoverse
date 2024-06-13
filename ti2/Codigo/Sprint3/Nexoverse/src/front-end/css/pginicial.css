@@ -1,0 +1,276 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .header-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #bf1c50;
+    color: #141414;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  header {
+    background-color: #bf1c50;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-button {
+    margin-left: 10px;
+    padding: 10px 20px;
+    background-color: #141414;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.logo {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+}
+  /* Estilos Gerais */
+  body {
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #141414;
+    color: #ffffff;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .container2 {
+    max-width:1200px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgb(39, 36, 36);
+    overflow: hidden;
+  }
+  
+  .hero2 h1 {
+    font-size:35px;
+    color: #bf1c50;
+  }
+  .texto {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: left;
+    margin-right: 20px; 
+    float: left;
+  }
+  
+  .imagem {
+    width: auto; /* largura automática para manter a proporção */
+    height: 200px; /* altura desejada */
+    float: right;
+    margin-right: 20px;
+  }
+  
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color:#bf1c50;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+  }
+  
+  
+  .hero {
+    text-align: center;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#bf1c50;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  
+  .logo {
+    width: auto;
+    height: 100px;
+    margin-right: 10px;
+}
+  .sobreNos{
+    text-align: center;
+    padding: 100px;
+  }
+  
+  .sobreNos h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#bf1c50;
+  }
+  
+  .sobreNos p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .equipe{
+    text-align: center;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .equipe h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color:#bf1c50;
+  }
+  .equipe p{
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+
+  .membro {
+    text-align: center;
+    margin: 20px;
+}
+
+.foto {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Torna a foto redonda */
+    object-fit: cover; /* Garante que a foto mantenha sua proporção */
+    border: 3px solid #fff; /* Adiciona uma borda branca à foto */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adiciona uma sombra à foto */
+}
+
+.membro h3 {
+    margin-top: 10px;
+}
+
+.membro p {
+    font-size: 14px;
+    color: white;
+}
+  
+  /* TIRANDO DEFAULT*/
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* ANIMAÇÃOZINHA DE IR PRA DIREITA O TREM ROXO */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgba(255,255,255,0.6);
+    --animation-color: #bf1c50;
+    --fs-size: 2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 1px var(--text-stroke-color);
+  }
+  /* TEXTO QUANDO VC SEGURA O BOTAOZINHO */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+  }
+  /* hover */
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+  
+  /* Adicione esta parte ao seu arquivo CSS */
+  
+  .explicacao:nth-child(even) {
+    background-color: #282828; /* Cor de fundo para seções pares */
+  }
+  
+  .explicacao:nth-child(odd) {
+    background-color: #1f1f1f; /* Cor de fundo para seções ímpares */
+  }
+  
+  .explicacao {
+    display: flex; /* Use flexbox para alinhar itens na horizontal */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #282828; /* Cor de fundo */
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites da div */
+  }
+  
+  .explicacao2 {
+    display: flex; /* Use flexbox para alinhar itens na horizontal */
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: #141414; /* Cor de fundo */
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites da div */
+  }
+  
+  .imagem {
+    width: 30%; /* Defina o tamanho da imagem */
+    margin-right: 20px; /* Adicione um espaçamento entre a imagem e o texto */
+  }
+
+  
+  
+  .conteudo {
+    flex-grow: 1; /* Ocupa todo o espaço restante */
+  }
+  
+  .conteudo h2{
+    color: #bf1c50;
+  }
+  .conteudo p {
+    color: #ffffff; /* Cor do texto */
+  }
+  
