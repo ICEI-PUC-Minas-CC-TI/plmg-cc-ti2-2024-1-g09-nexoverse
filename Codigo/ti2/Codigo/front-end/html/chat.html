@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #141414;
+    }
+
+    .scrollable-container {
+      max-height: 80vh;
+      overflow-y: auto;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .rectangle {
+      width: 700px;
+      background-color: #e53b71;
+      text-align: center;
+      position: relative;
+      font-family: 'TeX Gyre', sans-serif;
+      
+      margin: 20px 0;
+      padding: 20px;
+    }
+
+    .image {
+      width: 145px;
+      height: 145px;
+      border-radius: 50%;
+    }
+
+    h1, h2, h3 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      color: #fff;
+      margin: 10px 0;
+    }
+
+    h2, h3 {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <img id="logo" src="../img/logonex.webp" style="width: 200; height: auto;">
+    
+  <div class="scrollable-container">
+    <div class="container" id="usuarios"></div>
+  </div>
+
+  <footer id="footer">
+    <a class="navbar-brand" href="index.html">
+      <ion-icon id="game-controller-icon" name="game-controller"></ion-icon>
+    </a>
+    <a class="navbar-brand" href="chat.html">
+      <ion-icon id="chatbox-icon" class="white-icon" name="chatbox"></ion-icon>
+    </a>
+    <a class="navbar-brand" href="perfil.html">
+      <ion-icon id="person-icon" name="person"></ion-icon>
+    </a>
+    <a class="navbar-brand" href="feednoticias.html" target="_blank">
+      <ion-icon id="home-icon" class="yellow-icon" name="home"></ion-icon>
+    </a>
+  </footer>
+
+ 
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
+
+<script>
+ const userid = localStorage.getItem('userid') ? localStorage.getItem('userid') : 0;
+
+fetch("http://localhost:5050/appuser/list", {
+  method: "POST",
+  headers: {
+    "Content-Type": "application/json",
+  },
+  body: JSON.stringify({ userid }),
+})
+.then(response => {
+  if (response.ok) {
+    return response.json();
+  } else {
+    return response.text().then(text => { 
+      throw new Error(`Error ${response.status}: ${text}`);
+    });
+  }
+})
+.then(data => {
+  const usuariosDiv = document.getElementById("usuarios");
+  usuariosDiv.innerHTML = '';
+  data.forEach(user => {
+    const userDiv = document.createElement('div');
+    userDiv.classList.add('rectangle');
+    userDiv.innerHTML = `
+      <img class="image" src="${"../img/imgperfil.jpeg"}" alt="${user.nome}">
+      <h1>${user.nome}</h1>
+      <h2> Jogos: ${user.jogos}</h2>
+      <h3> Plataforma: ${user.plataformas}</h3>
+      <h3> Telefone: <a href="https://wa.me/${user.telefone}">${user.telefone}</a> </h3>
+      <h3>${user.biografia}</h3>
+    `;
+    usuariosDiv.appendChild(userDiv);
+  });
+})
+.catch(error => {
+  console.error('An error occurred:', error);
+  alert('An error occurred: ' + error.message);
+});
+
+
+</script>
