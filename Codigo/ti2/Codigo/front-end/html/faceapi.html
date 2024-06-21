@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: absolute;
+            border: 4px solid red;
+            width: 100px;
+            height: 100px;
+        }
+        
+        div>ul>li {
+            color: white;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        video {
+            height: 100%;
+            width: 100%;
+        }
+        
+        canvas {
+            display: none;
+        }
+
+        /* Estilos do cabeçalho */
+        header {
+            background-color: #bf1c50;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header-button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            background-color: #141414;
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a class="header-button" href="../html/feednoticias.html">Sair</a>
+    </header>
+    <div>
+        <ul></ul>
+    </div>
+    <video autoplay id="video"></video>
+    <canvas id="canvas"></canvas>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        const subscriptionKey = "7c59be380b12431d9345bf6781664ef4";
+        const url = "https://faceapi-nex.cognitiveservices.azure.com/face/v1.0/detect";
+
+        // Função para converter data URL em Blob
+        var makeBlob = function(dataURL) {
+            return fetch(dataURL)
+                .then(res => res.blob());
+        }
+
+        // Função para processar a imagem
+        var processImage = function(blob) {
+            var params = {
+                "detectionModel": "detection_01",
+                "returnFaceId": "true",
+                "returnFaceAttributes": "age,gender,glasses,smile,emotion",
+                "recognitionModel": "recognition_01"
+            };
+
+            fetch(url + "?" + new URLSearchParams(params), {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/octet-stream",
+                    "Ocp-Apim-Subscription-Key": subscriptionKey
+                },
+                body: blob
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.length === 1) {
+                    makeDiv(data[0]);
+                }
+            })
+            .catch(error => {
+                console.error("Erro ao processar imagem:", error);
+            });
+        }
+
+        // Função para criar a div com informações do rosto
+        var makeDiv = function(data) {
+            let height = data.faceRectangle.height;
+            let left = data.faceRectangle.left;
+            let top = data.faceRectangle.top;
+            let width = data.faceRectangle.width;
+            $("div").css({
+                height: height,
+                left: left,
+                top: top,
+                width: width
+            });
+            $("ul").empty();
+            $("ul").append(`<li>Idade: ${data.faceAttributes.age}</li>`);
+            $("ul").append(`<li>Sexo: ${data.faceAttributes.gender}</li>`);
+            $("ul").append(`<li>Óculos: ${data.faceAttributes.glasses}</li>`);
+            $("ul").append(`<li>Sorriso: ${data.faceAttributes.smile}</li>`);
+            $("ul").append(`<li>Bravo: ${data.faceAttributes.emotion.anger}</li>`);
+            $("ul").append(`<li>Feliz: ${data.faceAttributes.emotion.happiness}</li>`);
+            $("ul").append(`<li>Neutro: ${data.faceAttributes.emotion.neutral}</li>`);
+        }
+
+        // Lógica para captura de vídeo e processamento de frames
+        navigator.mediaDevices.getUserMedia({ video: true })
+            .then(function(stream) {
+                var video = document.getElementById('video');
+                video.srcObject = stream;
+                video.play();
+
+                var canvas = document.getElementById('canvas');
+                var context = canvas.getContext('2d');
+
+                video.addEventListener('play', function() {
+                    var $this = this; // cache
+                    (function loop() {
+                        if (!$this.paused && !$this.ended) {
+                            context.drawImage($this, 0, 0);
+                            canvas.toBlob(function(blob) {
+                                processImage(blob);
+                            }, 'image/jpeg');
+                            setTimeout(loop, 1000 / 30); // 30 fps
+                        }
+                    })();
+                }, 0);
+            })
+            .catch(function(err) {
+                console.error("Erro ao acessar câmera:", err);
+            });
+    </script>
+</body>
+
+</html>
