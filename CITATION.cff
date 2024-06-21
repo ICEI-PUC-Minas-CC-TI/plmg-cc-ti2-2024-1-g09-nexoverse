@@ -1,31 +1,32 @@
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: Nexoverse
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names:
+  - family-names: Campos Pereira
+    given-names: Arthur
+  - family-names: Alves Bragança
+    given-names: Gabriel
+  - family-names: Lopes de Resende
+    given-names: Gustavo
+  - family-names: Henrique Duarde Silva
+    given-names: Mateus
+  - family-names: Guimarães Alves Freitas
+    given-names: Pedro
+
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Soares Vieira de Vasconcelos
+    given-names: Amália
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: Jerônimo de Almeida
+    given-names: Sandro
 keywords:
-  - 
-  - 
-repository-code: 
+  - Match
+  - Amigos
+  - Jogos
+  - Geek
+repository-code: https://github.com/ICEI-PUC-Minas-CC-TI/plmg-cc-ti2-2024-1-g09-nexoverse
 license: CC-BY-4.0
 version: 1.0.0
-date-released: 2022-07-14
+date-released: 2024-06-24
